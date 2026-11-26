@@ -1,0 +1,20 @@
+DATA STRUCTURES LAB - SEMESTER PROJECT SUBMISSION
+
+Section: BSAI3B
+Group: 15
+
+Group Members:
+1. Seemal Atif - 25f0115 
+2. Wania Hassan - 25f0018
+
+Project Title: TruthLens - AI-Based News Credibility Analyzer
+
+GitHub Link: https://github.com/Wania81/DSlab_truthlenz_BSAI3B_group15
+
+Excited to share TruthLens, our Data Structures lab project: a news credibility analyzer that scores articles, links related stories, and flags misleading content.
+
+We used Hash Tables for fast lookup and keyword indexing, BSTs for score-ordered storage, Graphs for finding related stories, a Min-Heap for ranking the most suspicious articles, and Linked Lists for chaining and history.
+
+What we learned: choosing the right data structure changes both performance and design, and building each one ourselves made the trade-offs clear. In the era of AI, tools can help with planning, but real understanding comes from implementing the core logic yourself.
+
+GitHub: https://github.com/Wania81/DSlab_truthlenz_BSAI3B_group15

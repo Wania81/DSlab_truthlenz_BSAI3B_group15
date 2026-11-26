@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><title>TruthLens Poster</title>
+<style>
+  @page{size:A3 portrait;margin:0}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:system-ui,sans-serif;color:#1a1a1a;background:#fff}
+  .poster{width:297mm;min-height:420mm;padding:16mm;background:#f4f6f8}
+  header{background:#12355b;color:#fff;border-radius:14px;padding:18mm 14mm;text-align:center}
+  header h1{margin:0;font-size:64px;letter-spacing:1px}
+  header p{margin:8px 0 0;font-size:24px;opacity:.85}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:12mm;margin-top:12mm}
+  .box{background:#fff;border-radius:14px;padding:10mm;box-shadow:0 1px 6px #0002}
+  .box.full{grid-column:1/-1}
+  h2{margin:0 0 8px;color:#12355b;font-size:28px}
+  p,li,td,th{font-size:19px;line-height:1.5}
+  ul{padding-left:22px;margin:0}
+  table{width:100%;border-collapse:collapse}
+  th,td{border-bottom:1px solid #dde;padding:8px;text-align:left}
+  th{background:#eef}
+  .flow{display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap;font-size:18px}
+  .flow div{background:#12355b;color:#fff;padding:10px 16px;border-radius:10px}
+  .flow span{font-size:26px;color:#12355b}
+  .shot{border:3px dashed #aab;border-radius:10px;height:230px;display:flex;align-items:center;justify-content:center;color:#889;font-size:18px;text-align:center}
+  footer{margin-top:12mm;text-align:center;font-size:20px;color:#345}
+</style></head>
+<body><div class="poster">
+<header><h1>TruthLens</h1><p>AI-Based News Credibility Analyzer</p></header>
+<div class="grid">
+  <div class="box"><h2>Problem</h2>
+    <p>Fake and misleading news spreads fast and readers cannot easily judge what to trust. TruthLens scores articles using clear credibility indicators and flags suspicious ones.</p></div>
+  <div class="box"><h2>What it does</h2>
+    <ul><li>Stores and indexes news articles</li><li>Scores credibility (0–100)</li><li>Finds related stories</li><li>Flags misleading content</li><li>Lists the most suspicious articles</li></ul></div>
+  <div class="box full"><h2>How it works</h2>
+    <div class="flow"><div>Article input</div><span>→</span><div>Indicator checks</div><span>→</span><div>Score + label</div><span>→</span><div>Graph links related stories</div><span>→</span><div>Heap ranks suspicious</div></div></div>
+  <div class="box full"><h2>Data structures used</h2>
+    <table><tr><th>Structure</th><th>Role in TruthLens</th></tr>
+      <tr><td>Hash Table</td><td>Fast article lookup, source reputation, keyword index</td></tr>
+      <tr><td>Linked List</td><td>Hash chaining, triggered indicators, analysis history</td></tr>
+      <tr><td>BST</td><td>Articles sorted by score, range search</td></tr>
+      <tr><td>Graph</td><td>Related stories (BFS) and clusters (DFS)</td></tr>
+      <tr><td>Min-Heap</td><td>Top-K most suspicious articles</td></tr></table></div>
+  <div class="box"><h2>Credibility indicators</h2>
+    <ul><li>Source reputation</li><li>Clickbait headline</li><li>Excess caps / exclamation marks</li><li>Emotional language</li><li>Missing author or date</li><li>No citations</li><li>Corroboration by related stories</li></ul></div>
+  <div class="box"><h2>Sample output</h2><div class="shot">Paste a screenshot of your program here</div></div>
+  <div class="box full"><h2>What we learned</h2>
+    <p>Choosing the right data structure shapes both performance and design. Building each one ourselves made their trade-offs clear. In the era of AI, tools help with planning and the interface, but real understanding comes from implementing the core logic ourselves.</p></div>
+</div>
+<footer><b>Team:</b> Seemal Atif · Wania Hassan &nbsp;|&nbsp; Data Structures Lab · Section [___] · Group [___]<br>GitHub: [repository link]</footer>
+</div></body></html>

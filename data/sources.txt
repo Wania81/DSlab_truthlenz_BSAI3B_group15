@@ -1,0 +1,13 @@
+# domain|reputation (0-100)
+dawn.com|85
+thenews.com.pk|80
+reuters.com|95
+bbc.com|95
+nature.com|95
+geo.tv|75
+techcrunch.com|80
+dailybuzz-news.net|15
+truthrevealed247.blog|5
+viralgossip.click|5
+healthmiracles.top|5
+patriotwake.info|10
